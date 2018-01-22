@@ -1,0 +1,220 @@
+// Grid
+.row
+  display flex
+  width 100%
+  flex-wrap wrap
+  align-items center
+  ::after
+    display: table
+    clear: both
+
+.col-1
+  width 8.33%
+.col-2
+  width 16.67%
+.col-3
+  width 25%
+.col-4
+  width 33.33%
+.col-5
+  width 41.67%
+.col-6
+  width 50%
+.col-7
+  width 58.33%
+.col-8
+  width 66.67%
+.col-9
+  width 75%
+.col-10
+  width 83.33%
+.col-11
+  width 91.67%
+.col-12
+  width 100%
+
+
+// Global
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  font-family monospace, serif, sans-serif
+
+body
+  background-color #ecf8ec
+
+
+/****************************   Header     ******************************/
+header
+  background-color #153715
+  width 100%
+  //height 80px
+  position fixed
+  z-index 1
+  padding 10px
+  color #ecf8ec
+  ul
+    display inline
+    padding-top 20px
+    li
+      display inline
+      list-style-type none
+      text-align center
+      padding 0 20px
+      a
+        text-decoration none
+        color #ecf8ec
+        font-size 1.1rem
+        text-transform uppercase
+        &:hover
+          color darken(#ecf8ec,30%)
+
+
+.logoImg
+  float left
+  border 1px solid transparent
+  padding 0 7px 8px
+  border-radius 50%
+  background-color #ecf8ec
+
+.companyName
+  float left
+  display inline-block
+  padding 12px 15px
+  h4
+    display inline
+    font-size 1.8rem
+    font-weight 550
+
+ul.nav-center
+  float left
+  padding-left 120px
+
+.nav-right
+  float right
+
+.nav-menu
+  display none
+
+
+
+
+
+
+
+/*******************    Responsive     ***************/
+@media screen and (max-width 1222px)
+  ul.nav-center
+    padding-left 50px
+
+@media screen and (max-width 1133px)
+  .logoImg
+    width 60px
+
+  .companyName
+    padding 15px 15px
+    h4
+      font-size 1.5rem
+
+  header ul
+    padding-top 22px
+    li a
+      font-size 1rem
+
+@media screen and (max-width 1076px)
+  //header
+    //height 70px
+
+  .logoImg
+    width 50px
+
+  .companyName
+    padding 15px 15px
+    h4
+      font-size 1.3rem
+
+  header ul
+    padding-top 16.5px
+    li a
+      font-size 0.9rem
+
+@media screen and (max-width 1028px)
+  header ul li
+      padding 0 15px
+
+@media screen and (max-width 980px)
+  ul.nav-center
+    padding-left 70px
+
+@media screen and (max-width 960px)
+  header ul li a
+    font-size 0.8rem
+
+@media screen and (max-width 920px)
+  .logoImg
+    padding 0 4px 4px
+
+  .nav-center, .nav-right li:not([class="nav-menu"])
+    display none
+
+  .nav-menu
+    display block
+    position fixed
+    right 0
+    top 25px
+    a
+      font-size 1.4rem
+
+  .responsive
+    display block
+    float left
+    .nav-center
+      width 100%
+      background-color #153715
+      position fixed
+      left 0
+      top 70px
+      padding-left 62px
+      padding-top 0
+      li
+        text-align left
+        a
+          font-size 1rem
+    .nav-right
+      width 100%
+      background-color #153715
+      position fixed
+      left 0
+      top 165px
+      padding-bottom 10px
+      padding-left 62px
+      li:not([class="nav-menu"])
+        text-align left
+        display block
+        a
+          font-size 1rem
+    *
+      display block
+
+
+
+
+/*
+// Below 1040px
+@media screen and (max-width 1040px)
+  .logoImg
+    width 70%
+  .companyName
+    font-size 1.5rem
+  header ul li a
+    font-size 1rem
+
+@media screen and (max-width 950px)
+  header ul li a
+    font-size 0.9rem
+
+@media screen and (max-width 852px)
+  header ul li a
+    font-size 0.8rem
+*/
