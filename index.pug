@@ -1,4 +1,4 @@
-- var navCenterItems = ["home", "sofas", "seating", "tables", "storage", "sleeping"]
+- var navCenterItems = ["home", "sofas", "seating", "tables", "sleeping"]
 - var navRightItems = ["log in", "about us"]
 
 html
@@ -6,16 +6,23 @@ html
     link(rel="icon" href="assets/favicon.png")
     title Furniture
     link(rel="stylesheet" href="style.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
   body
     header 
-      img(src="assets/logo.png")
-      .companyName Furniture 
-      ul.nav-center
-        each item in navCenterItems
-          li 
-            a(href="#"+item) #{item}
+      img.logoImg(src="assets/logo4.png")
+      .companyName 
+        h4 Furniture 
       
-      ul.nav-left 
-        each item in navRightItems
-          li 
-            a(href= "#" + item.replace(' ','-')) #{item}
+      #nav
+        ul.nav-center
+          each item in navCenterItems
+            li 
+              a(href="#"+item) #{item}                
+        ul.nav-right
+          each item in navRightItems
+            li 
+              a(href= "#" + item.replace(' ','-')) #{item}
+          li.nav-menu
+            a(href="javascript:void(0);" onclick="dropDownMenu()") &#9776;
+    
+    script(src="app.js")
