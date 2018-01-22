@@ -1,3 +1,7 @@
+light-color = #ecf8ec
+dark-color = #3f613c
+darker-color = #153715
+
 // Grid
 .row
   display flex
@@ -42,18 +46,19 @@
   font-family monospace, serif, sans-serif
 
 body
-  background-color #ecf8ec
+  background-color dark-color
 
 
 /****************************   Header     ******************************/
 header
-  background-color #153715
+  background-color darker-color
   width 100%
   //height 80px
   position fixed
-  z-index 1
+  top 0
+  //z-index -1
   padding 10px
-  color #ecf8ec
+  color light-color
   ul
     display inline
     padding-top 20px
@@ -64,7 +69,7 @@ header
       padding 0 20px
       a
         text-decoration none
-        color #ecf8ec
+        color light-color
         font-size 1.1rem
         text-transform uppercase
         &:hover
@@ -76,7 +81,7 @@ header
   border 1px solid transparent
   padding 0 7px 8px
   border-radius 50%
-  background-color #ecf8ec
+  background-color light-color
 
 .companyName
   float left
@@ -98,10 +103,29 @@ ul.nav-center
   display none
 
 
+/*********************     Container    *********************/
+.container
+  display block
+  padding-top 80px
+  padding-bottom 30px
+  margin 0 100px
+  background-color light-color
+  color darker-color
+  .text
+    padding 10px 0
+    padding-left 100px
+    h1
+      text-align left
+      padding-left 20px
+      padding-bottom 30px
+    p
+      text-align left
 
-
-
-
+.container .image img
+  padding-top 60px
+  display block
+  margin auto
+  width 70%
 
 /*******************    Responsive     ***************/
 @media screen and (max-width 1222px)
@@ -123,9 +147,6 @@ ul.nav-center
       font-size 1rem
 
 @media screen and (max-width 1076px)
-  //header
-    //height 70px
-
   .logoImg
     width 50px
 
@@ -139,6 +160,10 @@ ul.nav-center
     li a
       font-size 0.9rem
 
+  .container .image img
+    width 80%
+
+
 @media screen and (max-width 1028px)
   header ul li
       padding 0 15px
@@ -147,9 +172,19 @@ ul.nav-center
   ul.nav-center
     padding-left 70px
 
+  .container .text
+    padding-top 15px
+
 @media screen and (max-width 960px)
   header ul li a
     font-size 0.8rem
+
+  .container .text
+      padding-top 60px
+      h1
+        font-size 1.7rem
+      p
+        font-size 0.9rem
 
 @media screen and (max-width 920px)
   .logoImg
@@ -197,24 +232,41 @@ ul.nav-center
     *
       display block
 
+@media screen and ( max-width 870px )
+  .container
+    margin 0 50px
+    .text
+      padding-top 60px
+      p
+        font-size 1rem
 
+@media screen and ( max-width 800px )
+  .container .text
+    padding-left 50px
 
+@media screen and ( max-width 720px )
+  .container
+    margin 0 30px
+    .text
+      padding-top 60px
+      p
+        font-size 1rem
 
-/*
-// Below 1040px
-@media screen and (max-width 1040px)
-  .logoImg
-    width 70%
-  .companyName
-    font-size 1.5rem
-  header ul li a
-    font-size 1rem
+@media screen and ( max-width 670px )
+  .container .text
+    h1
+      font-size 1.6rem
+    p
+      font-size 0.9rem
 
-@media screen and (max-width 950px)
-  header ul li a
-    font-size 0.9rem
-
-@media screen and (max-width 852px)
-  header ul li a
-    font-size 0.8rem
-*/
+@media screen and ( max-width 670px )
+  .container
+    .col-6
+      width 100%
+    .image
+      display none
+    .text
+      padding 40px 40px 20px
+      h1
+        padding-left 0
+        text-align center
