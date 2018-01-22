@@ -1,6 +1,21 @@
+- var navCenterItems = ["home", "sofas", "seating", "tables", "storage", "sleeping"]
+- var navRightItems = ["log in", "about us"]
+
 html
   head
     link(rel="icon" href="assets/favicon.png")
     title Furniture
     link(rel="stylesheet" href="style.css")
-    
+  body
+    header 
+      img(src="assets/logo.png")
+      .companyName Furniture 
+      ul.nav-center
+        each item in navCenterItems
+          li 
+            a(href="#"+item) #{item}
+      
+      ul.nav-left 
+        each item in navRightItems
+          li 
+            a(href= "#" + item.replace(' ','-')) #{item}
