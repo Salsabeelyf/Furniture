@@ -19,9 +19,10 @@ html
             li 
               a(href="#"+item) #{item}                
         ul.nav-right
-          each item in navRightItems
-            li 
-              a(href= "#" + item.replace(' ','-')) #{item}
+          li
+            a(href="logIn/index.html") #{navRightItems[0]}
+          li 
+            a(href= "#" + navRightItems[1].replace(' ','-')) #{navRightItems[1]}
           li.nav-menu
             a(href="javascript:void(0);" onclick="dropDownMenu()") &#9776;
             
