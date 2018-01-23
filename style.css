@@ -168,11 +168,32 @@ ul.nav-center {
   text-decoration: none;
   color: #153715;
 }
+.arrow h1 a:hover {
+  color: #62c362;
+}
 .arrow h2 {
   text-align: right;
   float: right;
   padding-top: 16px;
   padding-right: 10px;
+}
+/*****************    About   ******************************/
+.about {
+  padding-left: 50px;
+  padding-right: 30px;
+  line-height: 1.4rem;
+}
+.about .company h1 {
+  line-height: 3rem;
+}
+.about .company ul {
+  padding-left: 30px;
+}
+.about .companyImg img {
+  width: 90%;
+  border-radius: 40px;
+  display: block;
+  margin: auto;
 }
 /*******************    Responsive     ***************/
 @media screen and (max-width: 1222px) {
@@ -195,6 +216,13 @@ ul.nav-center {
   }
   header ul li a {
     font-size: 1rem;
+  }
+  .about {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .about .company h1 {
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 1076px) {
@@ -252,6 +280,13 @@ ul.nav-center {
   }
   .container .text p {
     font-size: 0.9rem;
+  }
+  .about .col-8,
+  .about .col-4 {
+    width: 50%;
+  }
+  .about {
+    line-height: 1.6rem;
   }
 }
 @media screen and (max-width: 920px) {
@@ -336,6 +371,9 @@ ul.nav-center {
   .container .text p {
     font-size: 1rem;
   }
+  .container .about {
+    line-height: 1.7rem;
+  }
 }
 @media screen and (max-width: 670px) {
   .container .text h1 {
@@ -365,6 +403,28 @@ ul.nav-center {
   .furniture .row .col-4:last-of-type {
     display: none;
   }
+  .about .company {
+    font-size: 1rem;
+  }
+  .about .company h1 {
+    font-size: 1.4rem;
+  }
+  .about .companyImg img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .about .col-4,
+  .about .col-8 {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .about {
+    padding-left: 30px;
+  }
+  .about .companyImg img {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 480px) {
   .furniture .col-4 {
@@ -375,5 +435,10 @@ ul.nav-center {
   }
   .furnitureImg img {
     height: 50%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .about .companyImg img {
+    width: 100%;
   }
 }
