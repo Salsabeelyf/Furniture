@@ -127,6 +127,45 @@ ul.nav-center
   margin auto
   width 70%
 
+/***************   Furniture containers    ******************************/
+.furniture
+  margin 100px 0
+  padding 0 20px
+
+.title
+  margin-bottom 40px
+  padding 5px 0
+  background-color darken(light-color,6%)
+  border-radius 20px 20px 0 0
+  h1
+    text-align center
+    font-size 2.5rem
+
+.futnitureImg img
+  display block
+  width 100%
+
+.arrow
+  margin-top 20px
+  padding-right 30px
+  h1
+    text-align right
+    float right
+    a
+      margin-top 10px
+      font-size 3rem
+      text-decoration none
+      color darker-color
+
+.arrow h2
+  text-align right
+  float right
+  padding-top 16px
+  padding-right 10px
+
+
+
+
 /*******************    Responsive     ***************/
 @media screen and (max-width 1222px)
   ul.nav-center
@@ -174,6 +213,16 @@ ul.nav-center
 
   .container .text
     padding-top 15px
+
+  .furniture .title h1
+    font-size 2.1rem
+
+  .arrow h2
+    padding-top 10px
+    font-size 1.3rem
+
+  .arrow h1 a
+    font-size 2.2rem
 
 @media screen and (max-width 960px)
   header ul li a
@@ -259,7 +308,7 @@ ul.nav-center
     p
       font-size 0.9rem
 
-@media screen and ( max-width 670px )
+@media screen and ( max-width 570px )
   .container
     .col-6
       width 100%
@@ -270,3 +319,19 @@ ul.nav-center
       h1
         padding-left 0
         text-align center
+
+  .furniture .col-4
+    width 50%
+
+  .furniture .row .col-4:last-of-type
+    display none
+
+@media screen and ( max-width 480px )
+  .furniture .col-4
+    width 100%
+
+  .furniture .row .col-4:nth-of-type(2)
+    display none
+
+  .furnitureImg img
+    height 50%
