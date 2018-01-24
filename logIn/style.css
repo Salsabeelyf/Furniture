@@ -86,7 +86,7 @@ header {
   margin: auto;
   background-color: #ecf8ec;
   margin-top: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   width: 40%;
   min-width: 320px;
   padding-top: 40px;
@@ -120,6 +120,7 @@ input[type="password"] {
   float: left;
   margin-right: 8px;
   margin-top: 3px;
+  font-size: 2rem;
 }
 .button {
   padding-top: 20px;
@@ -137,6 +138,16 @@ input[type="password"] {
   cursor: pointer;
   background-color: #5b8d57;
 }
+.new-account h3 {
+  padding-bottom: 25px;
+}
+.new-account h3 a {
+  text-decoration: none;
+  color: #ecf8ec;
+}
+.new-account h3 a:hover {
+  color: #80ae7c;
+}
 @media screen and (max-width: 1133px) {
   form input[type="text"],
   form input[type="password"] {
@@ -148,6 +159,9 @@ input[type="password"] {
   }
   .button input {
     width: 85%;
+  }
+  .new-account h3 a {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 780px) {
