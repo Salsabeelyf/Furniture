@@ -1,0 +1,33 @@
+html 
+  head
+    title Log in
+    link(rel="stylesheet" href="style.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    header 
+      img.logoImg(src="assets/logo4.png")
+      .companyName 
+        h4 Furniture 
+    
+    .login
+      .row
+        .col-12
+          h1 Login
+      
+      .row    
+        .col-12
+          form
+            .row
+              .col-12
+                input(type="text" placeholder="Email Address" name="email")
+            .row
+              .col-12
+                input(type="password" placeholder="Password" name="password")
+            .row.checkbox
+              .col-12
+                input(type="checkbox" name="Remember-me" value="remember")
+                |Remember Me
+            .row.button  
+              .col-12
+                input(type="submit" value="Log In")
+            
