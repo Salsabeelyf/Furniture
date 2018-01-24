@@ -1,0 +1,165 @@
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row ::after {
+  display: table;
+  clear: both;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.67%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.67%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.67%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.67%;
+}
+.col-12 {
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, serif, sans-serif;
+}
+body {
+  text-align: center;
+  background-color: #3f613c;
+}
+/***************************    Header     ******************************/
+header {
+  background-color: #153715;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  color: #ecf8ec;
+}
+.logoImg {
+  float: left;
+  border: 1px solid transparent;
+  padding: 0 7px 8px;
+  border-radius: 50%;
+  background-color: #ecf8ec;
+}
+.companyName {
+  float: left;
+  display: inline-block;
+  padding: 12px 15px;
+}
+.companyName h4 {
+  display: inline;
+  font-size: 1.8rem;
+  font-weight: 550;
+}
+/************************    form     ******************************/
+.login {
+  display: block;
+  margin: auto;
+  background-color: #ecf8ec;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  width: 40%;
+  min-width: 320px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+.login h1 {
+  margin-bottom: 15px;
+}
+form .row {
+  margin: 20px 0;
+}
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  height: 60px;
+  padding-left: 20px;
+  box-shadow: none;
+  border: 2px solid #3f613c;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.checkbox .col-12 {
+  padding-top: 15px;
+  text-align: left;
+  padding-left: 70px;
+  font-size: 1rem;
+}
+.checkbox .col-12 input {
+  float: left;
+  margin-right: 8px;
+  margin-top: 3px;
+}
+.button {
+  padding-top: 20px;
+}
+.button input {
+  width: 80%;
+  height: 50px;
+  border: 2px solid #3f613c;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #ecf8ec;
+  background-color: #3f613c;
+}
+.button input:hover {
+  cursor: pointer;
+  background-color: #5b8d57;
+}
+@media screen and (max-width: 1133px) {
+  form input[type="text"],
+  form input[type="password"] {
+    width: 85%;
+    font-size: 1rem;
+  }
+  .checkbox .col-12 {
+    padding-left: 40px;
+  }
+  .button input {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 780px) {
+  form input[type="text"],
+  form input[type="password"] {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+  .checkbox .col-12 {
+    padding-left: 30px;
+  }
+  .button input {
+    width: 90%;
+  }
+}
