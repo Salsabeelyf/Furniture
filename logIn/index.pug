@@ -19,15 +19,18 @@ html
           form
             .row
               .col-12
-                input(type="text" placeholder="Email Address" name="email")
+                input(type="text" placeholder="Email Address" id="emailInput" name="email")
             .row
               .col-12
-                input(type="password" placeholder="Password" name="password")
+                input(type="password" placeholder="Password" id="passInput" name="password")
             .row.checkbox
               .col-12
-                input(type="checkbox" name="Remember-me" value="remember")
+                input(type="checkbox" name="Remember-me")
                 |Remember Me
             .row.button  
               .col-12
                 input(type="submit" value="Log In")
-            
+    
+    .new-account
+      h3 
+        a(href="#") Create New Account?        
